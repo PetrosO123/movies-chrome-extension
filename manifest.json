@@ -1,0 +1,11 @@
+{
+    "name": "Dad Joke Generator",
+    "version": "1.0.0",
+    "description": "This is an extension that automatically generates dad jokes, with built-in sound effects and imagery.",
+    "manifest_version": 3,
+    "author": "Petros Ogbamichael, Michael Lav",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Dad Joke Generator"   
+    }
+}
