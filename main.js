@@ -30,12 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
             jokeHeader.appendChild(setup);
             setup.innerText= data.body[0].setup;
             setup.style.maxWidth = "50%";
+            setup.style.width = "500px";
             let punchline = document.createElement('li');
             punchline.style.margin = '10px 0px';
+            punchline.style.width = '500px';
             //after setTimeout (delay for 5 seconds)
             setTimeout(function(){
                 jokeHeader.appendChild(punchline);       
-            }, 5000);
+            }, 8000);
             punchline.innerText = data.body[0].punchline; 
             setTimeout(function(){
                 const gif = document.createElement('iframe')
@@ -68,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.addEventListener('click', (event) =>{
                     location.reload();
                 });
-            }, 6000)
+            }, 12000)
         })
         .catch(err => console.error(err));
     });
