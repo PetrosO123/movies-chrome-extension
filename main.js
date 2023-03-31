@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '347facc3e5msh981eeddebf50c0dp1da7f1jsne25fe6cbda5a',
+            'X-RapidAPI-Key': 'c16dab1b08mshff85bc972f872b5p1d9ab5jsnd6f69632bd39',
             'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
           }
     }
@@ -46,10 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 gif.style.height = "270px";
                 gif.style.frameBorder = "0px";
                 jokeHeader.appendChild(gif);
-                // const iframe = document.createElement('iframe');
-                // iframe.allow = "autoplay";
-                // iframe.src = "ba_dum_tss_drum.wav"
-                // gif.appendChild(iframe);
                 const audio = document.createElement('audio');
                 audio.controls = true;
                 const source = document.createElement('source');
@@ -70,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.addEventListener('click', (event) =>{
                     location.reload();
                 });
-            }, 12000)
+            }, 10500)
         })
         .catch(err => console.error(err));
     });
